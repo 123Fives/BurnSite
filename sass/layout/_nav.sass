@@ -9,6 +9,13 @@
   overflow: hidden
 
   transition: all ease-in-out 250ms
+  @media(min-width: 725px)
+    position: relative
+    left: 0
+    flex: auto
+    background: none
+    margin-top: 1em
+    margin-left: 2em
 
   ul
     display: flex
@@ -17,10 +24,17 @@
     text-align: center
     height: 100vh
 
+    @media(min-width: 725px)
+      flex-direction: row
+      height: auto
+
   li
     flex: 1 1 auto
     border-bottom: 1px solid rgba(0, 0, 0, .15)
     display: flex
+    @media(min-width: 725px)
+      border: none
+      display: inline-block
 
   a
     color: $text-inverse
@@ -29,9 +43,15 @@
     display: flex
     align-items: center
     justify-content: center
+    @media(min-width: 725px)
+      justify-content: flex-end
+      display: inline
 
     &:hover
       background: rgba(0, 0, 0, .10)
+      @media(min-width: 725px)
+        background: none
+        color: darken($text-inverse, 15%)
 
   &.is-open
     left: 0
@@ -45,6 +65,8 @@
   right: 1em
   top: 1em
   cursor: pointer
+  @media(min-width: 725px)
+    display: none
 
 .hamburger, .hamburger::before, .hamburger::after
   content: ''
