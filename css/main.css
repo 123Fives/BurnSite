@@ -801,7 +801,7 @@ h2 {
   .hero {
     text-align: left;
     padding-bottom: 0;
-    height: 85vmin;
+    height: 70vmin;
     min-height: 800px;
   }
 }
@@ -839,6 +839,12 @@ h2 {
   padding-left: 7%;
   padding-top: 10em;
   padding-bottom: 5.5em;
+}
+
+@media (max-width: 725px) {
+  .promo .bg-primary {
+    text-align: center;
+  }
 }
 
 .img-box {
