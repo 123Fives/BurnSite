@@ -2,8 +2,8 @@
 This project is a static website example
 using the FlexboxGrid framework and sass.
 
-## ScreenShoot
-![](./docs/screenshot.png)
+## ScreenShot
+![](./img/demo.png)
 
 # Installation
 Clone the project:
